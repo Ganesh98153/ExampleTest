@@ -1,0 +1,26 @@
+MM Data Last day MMEOD append
+IBank Data Last day IbankEod append
+
+IBank Unmatched Makuri --- 25 
+if (source !=IBB and Unmatched) (Sheet Name = IBankEOd)
+
+
+Makuri Unmatched IBank --- 14535 (last 8 digit of ref num) --L
+
+compare
+
+MM cbs_trace_id (8 digits) -- R
+
+(MakuriUnmatched - MM) unmatched (Sheet Name = Dish and Data)
+
+(MM- MakuriUnmatched) Unmatched 
+{
+	Txn status :- Failure --- (Sheet Name = MM Failure)
+	Txn Status :- Success --- (Sheet Name = MM Success/ MMEod)
+}
+
+Some Queries:
+
+- What to do with Ibank data if its IbankEOD is matched to today IBank Data
+- Similarly in MM
+- What to do with blank cbs trace id

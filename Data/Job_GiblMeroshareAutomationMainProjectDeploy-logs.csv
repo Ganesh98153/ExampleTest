@@ -1,0 +1,31 @@
+﻿Time,Level,Robot name,Process,Hostname,Host Identity,Message
+11/8/2022 12:15:10.051,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,GiblMeroshareAutomationMainProjectDeploy execution started
+11/8/2022 12:15:31.442,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Audit: Using Excel File: C:\Users\dbuser\.nuget\packages\giblmeroshareautomationmainprojectdeploy\1.1.5\lib\net45\Data\Output\2022-11-08T18-00-31.xlsx
+11/8/2022 12:17:35.158,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,The primary screen resolution is: 1366 x 768
+11/8/2022 12:17:36.705,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Reading Input data from Excel
+11/8/2022 12:17:36.705,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,3
+11/8/2022 12:17:36.705,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Excel Data read successfully
+11/8/2022 12:17:37.283,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Credential Fetched Successfully
+11/8/2022 12:17:44.796,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Succesfully Logged In to Meroshare Account
+11/8/2022 12:17:45.144,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Get the transaction item
+11/8/2022 12:17:45.144,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Processing Transaction Number: 0
+11/8/2022 12:17:45.582,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Started Process
+11/8/2022 12:17:58.280,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Response code is0\nResult isRecord Updated Sucessfully
+11/8/2022 12:17:58.296,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Successfully Updated on Database
+11/8/2022 12:18:23.139,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Transaction Successful.
+11/8/2022 12:18:23.217,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Get the transaction item
+11/8/2022 12:18:23.217,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Processing Transaction Number: 1
+11/8/2022 12:18:23.280,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Started Process
+11/8/2022 12:18:35.262,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Response code is0\nResult isRecord Updated Sucessfully
+11/8/2022 12:18:35.262,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Successfully Updated on Database
+11/8/2022 12:18:59.435,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Transaction Successful.
+11/8/2022 12:18:59.497,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Processing Transaction Number: 2
+11/8/2022 12:18:59.497,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Get the transaction item
+11/8/2022 12:18:59.576,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Started Process
+11/8/2022 12:19:11.966,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Response code is0\nResult isRecord Updated Sucessfully
+11/8/2022 12:19:11.966,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Successfully Updated on Database
+11/8/2022 12:19:36.123,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Transaction Successful.
+11/8/2022 12:19:36.169,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Get the transaction item
+11/8/2022 12:19:36.185,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Process finished due to no more transaction data
+11/8/2022 12:19:54.280,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,Meroshare A/c Logged Out and Chrome Closed Successfully
+11/8/2022 12:19:54.296,Info,gibl.rpa@gmail.com-unattended,GiblMeroshareAutomationMainProjectDeploy,WS2K22MSA,WS2K22MSA\dbuser,GiblMeroshareAutomationMainProjectDeploy execution ended

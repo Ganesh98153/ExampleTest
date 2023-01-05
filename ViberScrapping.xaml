@@ -1,0 +1,88 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ViberScrapping" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1153.3333333333333,544.6666666666666" sap2010:WorkflowViewState.IdRef="ViberScrapping_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ViberScrapping" sap:VirtualizedContainerService.HintSize="476,480" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Viber" sap:VirtualizedContainerService.HintSize="434,390" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="912c1ba5-2fa7-4234-bd6d-5b5f711b18e8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,84" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1150" FilePath="C:\Users\ganesh.tiwari\AppData\Local\Viber\viber.exe" IconBase64="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" InformativeScreenshot="4b16124e67b35744bf70b3570701e7e5.png" Selector="&lt;wnd app='viber.exe' cls='Qt624QWindowOwnDCIcon' title='Viber' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
