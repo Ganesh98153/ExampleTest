@@ -1,0 +1,151 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SecuredWebsite" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="562.6666666666666,1091.3333333333333" sap2010:WorkflowViewState.IdRef="SecuredWebsite_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="66">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>OpenQA.Selenium</x:String>
+      <x:String>OpenQA.Selenium.Edge</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="108">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>WebDriver</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SecuredWebsite" sap:VirtualizedContainerService.HintSize="476,1026.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="OpenQA.Selenium.Edge.EdgeOptions options = new EdgeOptions();&#xD;&#xA;options.BinaryLocation = @&quot;C:\Program Files (x86)\Microsoft\Edge Dev\Application\msedge.exe&quot;;&#xD;&#xA;options.AddExtensions(@&quot;C:\Users\ganesh.tiwari\AppData\Local\Microsoft\Edge Dev\User Data\Default\Extensions\kcgmcmhhfbcacnlnopghneecffhelmhe\22.10.6_0.crx&quot;);&#xD;&#xA;IWebDriver driver = new EdgeDriver(@&quot;C:\Users\ganesh.tiwari\OneDrive - Digital Network Solution Pvt. Ltd\Documents\UiPath\ExampleTest\Data\Driver\edgedriver_win64&quot;, options);&#xD;&#xA;&#xD;&#xA;System.Threading.Thread.Sleep(3000);&#xD;&#xA;driver.Navigate().GoToUrl(&quot;https://retail.onlinesbi.sbi/retail/login.htm#&quot;);&#xD;&#xA;driver.FindElement(By.XPath(&quot;//*[@id=\&quot;banner\&quot;]/div[2]/a&quot;)).Click();&#xD;&#xA;driver.FindElement(By.XPath(&quot;//*[@id=\&quot;username\&quot;]&quot;)).SendKeys(&quot;myuserName&quot;);" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,165.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+      <ui:InvokeCode.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: State Bank of India - Personal Banking" sap:VirtualizedContainerService.HintSize="434,734" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="60ad07ae-7110-4bc0-84a5-96db003fb2dc" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,514.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_4" IsPassword="True" ScopeIdentifier="60ad07ae-7110-4bc0-84a5-96db003fb2dc" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://retail.onlinesbi.sbi/retail/login.htm#" DesignTimeRectangle="126, 712, 382, 47" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FriendlyName="'INPUT label2'" FullSelectorArgument="&lt;webctrl id='label2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='label2' tag='INPUT' type='password' class='form-control' aaname='password' /&gt;" Guid="680e0577-257f-4b0c-841e-0d5b07ac6c09" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYIAAAAzCAYAAACaGw/tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADeSURBVHhe7dVRCcAwFMDA+ddWM1XwRj/LmIJc4DTkGUlSOiOQpHhGIEnxrhGstQAIOX1GsPcGIMAIAOKMACDOCADijAAgzggA4owAIM4IAOKMACDOCADijAAgzggA4owAIM4IAOKMACDOCADijAAgzggA4owAIM4IAOKMACDOCADijAAgzggA4owAIM4IAOKMACDOCADijAAgzggA4owAIM4IAOKMACDOCADijAAgzggA4owAIM4IAOKMACDOCADijAAgzggA4owAIM4IAOKMACDudwQAdJyuEUiSas28blGBtl2eIwkAAAAASUVORK5CYII=" InformativeScreenshot="b7be0780be1cb49469fc6a87b687697d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='State Bank of India - Personal Banking' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="126, 671, 382, 33" ElementType="Text" FriendlyName="'Password*'" FullSelectorArgument="&lt;webctrl aaname='Password* ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password* ' tag='LABEL' type='' class='' check:innerText='Password*' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYIAAAAlCAYAAABPlO5rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALvSURBVHhe7dlvbuMgEIbxvWQuUx+lPkfka1Q5RXoJ1tjADP9cV3JJd+f5SWi7mGCcD/Ni8scBAEwjCADAOIIAAIwjCADAOIIAAIwjCADAOIIAAIwjCADAOIIAAIwjCADAOIIAAIwjCADAOIIAAIwjCADAOIIAAIy7NAge7zd3u/Xb/BEGoul5n8J3NbtH6PP2/sktn6EDAC40NAh8m+7PMBqlKgg+Znd7X//y//q+z8VNBAKAiw0PgnK3C1EGQe/75M0KwJV+JgjeFlfu+6XI5Tta6ZdWvzU83fKWj2kflXw1Tl33O+1o22nv/dm9t514OUejQFfP+3BzuDbdH2pNah51z33cs34jCOL9CAAAP+GlQdAKgdikILeKe2ydIn8wLt1TrTFbh+qvn0cKfN30Wjrj4jwpYHpNgmBf2/r/7TP6HgBwjRceDUmxlJ2uKuaxaKqds4xThTbu7L89Topqvu64PllLDCUZ1yn6zcAoi7cOLLXzz8Ih9Ie++Dz7/dVnAOACw4Oge7xR7pIbQXC4Iz47rirwumjvbVtjFRgyLjs+8tLa67HZEZSn1lnOI98fxR7AOAODoFGcy+KvW9pdd+YtC+zq2+P8tVSYZzeH/q1Ax7UdvpkE1bWD0DiYR46oCAIA4wz7jaCiCqIUxcbRUKKPVKRVhfbMuBRAs1ti8fWhoIr/osPCIwgA/KdeFwSqGEvROwqCnOz+j4tme1znOKjb7x0U9/QsJ46RVBCU184+EwBc6RcEgSq2qi/N0Rq3kt1zKL5nxwVSdPW18m0iL8jyGT2XCo/03AdBkN1DzaOfnSAAMNDrgkAX0FZLc7SPelJLvwGcHRe0QmclwdH4zOGa228cdRCssqLfagQBgHFeGASr4neCrWimIpnv4LMCrccXzo7L7q0LfufNQsvfJtZWPe8XQeAVz+7XIGsnCACMc2kQAAD+PQQBABhHEACAcQQBABhHEACAcQQBABhHEACAcQQBABhHEACAac79BfLem1Ucd+3YAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="358,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="60ad07ae-7110-4bc0-84a5-96db003fb2dc" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://retail.onlinesbi.sbi/retail/login.htm#" DesignTimeRectangle="126, 841, 90, 45" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl id='Button2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Button2' tag='INPUT' type='submit' class='btn btn-default' aaname='Login' check:text='Login' /&gt;" Guid="60a634fb-7803-40f7-bce9-e96c1f52b9ac" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAxCAYAAABTcB7hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALDSURBVHhe7ZhRa9pQGIb3E/cvvNpP6I0/QHaxXvTGjjEvyljJTeeFg2FHJ5MVhrYgLVJahwQhBCEVCcq7854k01iddqhfnN8DLyXnfAb75OTLiS+giKDihVDxQqTEv3z1WrOFEBUvEKLiBUJUvECIihcIUfECISpeIETFC4SoeIEQFS8QouIFQlS8QIiKFwhR8QIhGxZ/hY49s4fK3Pkt5vQBAb+KezV/foshKl4gZH/EZyhExQuEZFB8CUcXXbiDkf2kJRyic32JQv5pfe6khbY/jAsNgz4anx1UXB4M0TiNa+e1mprHEXRqRRS+duEP7KEl8HuonhQntWsMyZh4I6wbCx+PEHgeOt0+gnE0hOABx1Pyc04skwR9U+shugYjhCH/ribedz2wPEydwzA23/swrl1jSKbEH8QiEHThHE3N5cuoutEFCX9dImfHK/jR58gInXo5HmMcOPeJudXE23PUnMm4OUe1F834zfLU+HpCMiT+IxIP7eqcW/ywBds9eC6u+rOuXaXwbnEwW5v/iba9S1YU379DIRmbmQtuztPjawjJkPjvaNmFuqg2uTCRzELzkQcLxBTjFbuieHMXTT6bntsD8ctrpx+YxzdRO3HrpaW1duwv4ufK1RWf5DkrXsVvrseX19fj91z8c3c152jYfffsrqaE93EbUvGGcGj21gviNr/E9Uv28YMePk1dkOl9fHoPbs6rK3456X/OvLnWe+Yt8h/fXAMPtbNv8d3QRy15Adov8VJJ2tBqLW7bIbsr/t0dfPOdQ/NwfZOaK6JQj34CQK/19MGbgZAdXvGT13q2Itf0d/Z490/Tf0Qt6e8ZC9ntVmN2O861h8Au75jxEP79LT683cwvi+sI+U97fLZDVLxAiIoXCFHxAiEqXiBExQuEqHiBEBUvEKLiBUJUvECIihcIUfECISnxyrYAfgPNV9rKOBv3XwAAAABJRU5ErkJggg==" InformativeScreenshot="97963716bd3b1858dc7448717b911bcc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='State Bank of India - Personal Banking' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGcSURBVDhPhVNNLwNRFL2v1CTCWkm7an8EEgkbumDHH7DwR2y6oxua0iIimqJqOk3ZiMTGhtiohYiGRtGZ10UXqAXnTsti5rUmOZk793zMfTPv0e8lslUSmVeNclaYDLkLlClf+7LBtSFTpFth1rD279JWbggmEkfmAETLMEjguw0kNFFofZST1BUvIkE3Ya6yOaMwqGHILDw+TETk2a940VhSCjsB0wr2ImUSDdMl+B8mvFOEpG0FyXgCt2GDa5XGkDscUFKQZaRPaJEL0hbPecpx9NwhhnwkFJ8KItkdKwqskRje6LVAL+HS5WsNDmg4mhyw1reQJrGHACBAozxp3KXjPQJCtb4Sxh6hsw+i03f+1cPoPTg0/KIyB6RcRJO8woYZgnkQ9WUbTZp34TQeVLuvInQrBD6I+tnBMWrgZkgcvGhIWlUIOgcYMmZ7sVY+B340Cg5R+wBDntgenCHqSd7xd+CQAO7rENRbQlVAHZpES0uerfvmiewfi3AAicO3XhhmQRaAW6GbIUwYRF0EjsHNsYa1/vlNOIl+ABbZQBym9a8PAAAAAElFTkSuQmCC" InformativeScreenshot="d454ba74919a63c33e735e8536bb5012.jpg" Selector="&lt;html app='msedge.exe' title='State Bank of India - Personal Banking' /&gt;" Url="https://retail.onlinesbi.sbi/retail/login.htm#" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

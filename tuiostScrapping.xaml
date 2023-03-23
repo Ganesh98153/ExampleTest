@@ -1,0 +1,225 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="tuiostScrapping" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1040.6666666666667,3008.6666666666665" sap2010:WorkflowViewState.IdRef="tuiostScrapping_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="38">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="45">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="tuiostScrapping" sap:VirtualizedContainerService.HintSize="1050.6666666666667,2944" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="1008.6666666666666,2856.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2f0b18d1-172b-4241-9f1e-d9d5234f0d61" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="974.6666666666666,2638" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              <Variable x:TypeArguments="x:String" Name="somestring" />
+              <Variable x:TypeArguments="x:String" Name="anotherString" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address and search bar'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="932.6666666666666,220" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="2f0b18d1-172b-4241-9f1e-d9d5234f0d61" Text="https://www.tuiost.edu.np/" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="AxRwplzEB0-kmjGfGGwsZA" DesignTimeRectangle="224, 71, 1476, 36" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'Address and search bar'" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="e1834951-80e1-4c8c-926e-1f4517818c60" ImageBase64="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" InformativeScreenshot="7714863eba9d8e50ac8de7c1e24a1b0e.png" Reference="LWMSPen3T0e-0l97rx5IPQ/4ryf9pODo0asEJatzCA_Yw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="932.6666666666666,182.66666666666666" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="2f0b18d1-172b-4241-9f1e-d9d5234f0d61" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="932.6666666666666,975.3333333333334" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="896,806" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="854,182.66666666666666" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(tab)][u(hk)]" Version="V3" />
+                  <uix:NCheckState DisplayName="Check App State 'BUTTON'" sap:VirtualizedContainerService.HintSize="854,496" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2f0b18d1-172b-4241-9f1e-d9d5234f0d61" Timeout="2" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,274.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="338,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f0b18d1-172b-4241-9f1e-d9d5234f0d61" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.tuiost.edu.np/" DesignTimeRectangle="1865, 239, 66, 66" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='fancybox-button fancybox-button--close' aaname='Close' /&gt;" Guid="98763f85-158f-4684-9b00-9f76c86659b6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJISURBVHhe7dtNihpRFIZhV9LWr5p5uwXdiUvJ2J+ehUBvwGGgR3EQFBwYMlQJJINeQMgGTjwVClLW+Uqlb/W9ST7hAam6Fz0vVoGCnY/fn4We5duPn6KPTvl49+FJ6El2x6/VMG/fPwo9yqfPX6pheoM3UugPgtcftGfx8MAwllqYrNeXQt4LXt5rz3yxqIZJ874Usjx41kCu1MLEaS6FJA1emmWtmc3nZ2GS7PSiJ3ESvDQ9xWnJbDarhoniVApRHLwkSVpTC9ONEil0o+DFcdya6XRaDcNPzG+8lABeSkDtUrrrxlK46wYviqLWMAzAMADDAAwDMAzAMADDAAwDMAzAMIDXMPf3Q/P4NXSvNZAr3sLoYMvlUkajkXm+ie7RvcNhe3G8hCmjbLdbWa1WN8XRtbpH97YZx0uYP4e7JY61bzwem4O9lLdL6dY4rxlFeb35XhsHrbMGcsVrGHUpTtN5ayBXvIdRaPimKMoayJUgwqjzCJvNRtbrNYyirIFcCSaMKuPsdjs5HA4FfW5FUdZArgQVRk0mE9nv93I8Hgv6XI9Za62BXOEnBgj2HqP3F73P/Nf3mPMoZQR0vNxnDeSK9zCXhm86bw3kitcwl6JcWmcN5Iq3MNdGKVnr/7nvSrdGKb1mHC9h+HtMA/6C10DjWMevoXutgVzxGualrIFcYRiAYQCGARgGYBiAYQCGARgGYBiAYQCGARgGYBiAYQCGARgGYBiAYQCGARgGYBgAh/kLWP+XdqX2v2vrDYTKGsiVaphO5xcfmu+HmkVWaQAAAABJRU5ErkJggg==" InformativeScreenshot="d2dd24638d23abf5fcede6a141394462.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - IOST' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,276" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,94.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Closed all popups&quot;]" />
+                        <ui:Break sap:VirtualizedContainerService.HintSize="338,25.333333333333332" sap2010:WorkflowViewState.IdRef="Break_1" />
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.tuiost.edu.np/" DesignTimeRectangle="1865, 239, 66, 66" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='fancybox-button fancybox-button--close' aaname='Close' /&gt;" Guid="07f08c8a-8750-4751-9227-e9c4ec29b9ab" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJVSURBVHhe7dhNaxpRFMZxV5kZnTQmjdsmzuSl/Qp+HT+KLzXuXJdCvkQhq4J03dKllEJdBBfppnQnCqcc4UJHzxmV3Ou9pY/wA5nxgs8fdWHl4/SR4JF+/PpN/KiYx7sPDwQP9Pnb92KY/vt7gnv69OVrMczN6zfEzhuN/9pwOJTDvDxvBE8aZMtGmKubW2L107PgnZ65M7i7K4bJr2+JvTipB++k7s7bwaAYpplfE6ulx8FLj93p9/trYbIrYrVaGrw0dWcjzGUzJ5Yk1eBVq+70er1imIvLjFgcJ8FLEne63W4xjPnESG8kNNIgWxBGsRHGfJWiKA5eHLuzEebVRZPY0VEUvChyp9PpIIwEYRQIo0AYBcIoEEaBMAqEUSCMAmEUXsNkWS5e3wWflQbZ4i0MDxuPx9RqtcT7ZfgMn81zd3G8hDFRZrMZTSaTveLwa/kMn3UZx0uYv8ftE0c7Jw17Lm9fpX3jHDIK8/rju2ucQ0dhXsOwbXHK7kuDbPEehmnjy6IwaZAtQYRh6xGm0+mKFoVJg2wJJgwzcZ6eftJisVjh51IUJg2yJagwrN1u03w+p+VyucLP+Zr0WmmQLfjEKPAbowgizHoUE0G7bs5Jg2zxHmbb+LL70iBbvIbZFmXb66RBtngLs2sU49BxvITZN4pxyDhewuD/mBL4B68Ex5Gu74LPSoNs8RrmuaRBtiCMAmEUCKNAGAXCKBBGgTAKhFEgjAJhFAijQBgFwigQRoEwCoRRIIwCYRQIo0AYBcIo1DD/gizLnBmNRggjKYapVP4Aq1mqVB3qt/4AAAAASUVORK5CYII=" InformativeScreenshot="dae9bd0cedcc85511c3281979ee6d1ea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - IOST' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <Literal x:TypeArguments="x:Boolean" Value="True" />
+              </ui:InterruptibleWhile.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleWhile>
+            <uix:NHover DisplayName="Hover 'Exam'" sap:VirtualizedContainerService.HintSize="932.6666666666666,158.66666666666666" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_2" ScopeIdentifier="2f0b18d1-172b-4241-9f1e-d9d5234f0d61" Version="V3">
+              <uix:NHover.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.tuiost.edu.np/" DesignTimeRectangle="411, 599, 108, 133" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Exam'" FullSelectorArgument="&lt;webctrl aaname='                                         Exam                   *' aria-role='button' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                         Exam                   *' aria-role='button' tag='A' type='' class='nav-link dropdown-toggle' check:innerText='EXAM' /&gt;" Guid="d8f0ac76-46e9-4089-a3bd-71709f9e1d39" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAACJCAYAAAD0fbyaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARySURBVHhe7du/SyNBGMbx/TP2zzCdgasCFqYM2AhXSLhCUgYLWQ5BghwSrjqukGAhxOIgFoKNEJuDWBzE7q4Q0liksEhhseV77+xMkv0xEYWD81mfLyyYTUxkP87sjGAgDDoCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8N4I4FT6W4EEge9oSP9BXxKPpbMeSPVoLLH9pkyTs4YEYVuGT+5EqtFhqM9FMvR9o+mhL43ks5oyeHTnvI2lu2Z/rsb51J37v70twE/fZHgzzB1jmboLH/+MpBJUpXtnHy96GMh2GEr72iMUDyXS58IwkObFzJ3MlQBWpKI49dOJO+nptqPvo+9FwHwO8HDkHq8qluGejqbNniwv80yudvWi7l7pV8VmF00J1royOK1LsNXXT/KUALakc6Sv2Ui/dzr97P1QKsddiQiY76WA2tNQ2jqaGmf2MsfXbR0V2zIw02yhmQx2Aql8HYvc96Qe1KV3755KlwDqVH03kKaOxMIINz2a52r6/SPpEDDfKwC12WXLov0ZSbQWyvaPFRczQTMX3TyYSG9TMY8VM98c8MGCh56fIxnJycgnoCcHuK/T4GyWO3wrj6kMPpr7mk6nOi2uumuNjyuZ6XZ6rgsdnU4LhAtAO6KLCx6Lb++hBPTkAPXCFI+OXrJiyapTn699/+3O5LMrxsyiJJkGQ4lucr8UKUC76AmkdZm6o+pIri1WqAT09Lop1K46K9I+bOuq1H9fi28iXS1WJTpPr2j7En3Qz8kveNKAWjJydwaL15jH4f7QbV8I6Ok1gOlVp/26OI2a8/MR7Dty+70coNx1l78YbhvSubVPEdDbywELq063B8wsZFZNlSY3RWam1jyguedt2NckIzlz3ySgpxcCPplVp148t4WYNznR/VvYkis3qiZmz+dbrCTZ/VxmL1kAnL9HW9q6Kq2dpD+PgJ4c4LN/iYll9Dm7qlymC5Z1Xf7vmfuUXbx4twvzkikytd/zANpRbKbb/D2WgJ4cYHLB8oe9sPGvjlR9f0ZzxbedBCU6/bJyYbPMbgsW+z0foN5HzZ4wvZixEZD9wwgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4pQQ8ODjw/JNM9jCvKUOlHYHPIZYFz1TqKdSHWCY8U+nvgWnEsuGZ3sUixsCVEc/0LgDLHAHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA8AgIHgHBIyB4BASPgOAREDwCgkdA6ET+AmgnqAUwMtVIAAAAAElFTkSuQmCC" InformativeScreenshot="141d7568ed04b869efbf30b86d98bc60.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - IOST' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NHover.Target>
+            </uix:NHover>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Exam Schedule'" sap:VirtualizedContainerService.HintSize="932.6666666666666,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f0b18d1-172b-4241-9f1e-d9d5234f0d61" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.tuiost.edu.np/schedule" DesignTimeRectangle="438, 803, 193, 50" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Exam Schedule'" FullSelectorArgument="&lt;webctrl aaname='Exam Schedule' class='dropdown-item' parentid='navbarNav' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Exam Schedule' class='dropdown-item' parentid='navbarNav' tag='A' type='' check:innerText='Exam Schedule' /&gt;" Guid="8428f8ab-eb4d-4cfc-9363-59ca4515fb44" ImageBase64="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" InformativeScreenshot="7144a4cd4041a10bd3e356e70f646cdd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exam Schedules - IOST' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='notice' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='notice Url' ReferenceName='Column2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='date' ReferenceName='Column1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column2' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='b' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='small' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="932.6666666666666,159.33333333333334" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="2f0b18d1-172b-4241-9f1e-d9d5234f0d61" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.tuiost.edu.np/notice" DesignTimeRectangle="760, 671, 50, 56" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'»'" FullSelectorArgument="&lt;webctrl aaname='»' class='page-link' parentid='notices' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='»' class='page-link' parentid='notices' tag='A' type='' check:innerText='»' /&gt;" Guid="cac1957b-c5cc-480f-b488-fe43dd2c0766" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAA8CAYAAAAt3km7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFlSURBVGhD7Zo9asNAEIVzMp8h18gdTAoXvkBIkdaV7+BAyBECTheBfsAINSkEEinC84y1a1txkSJahzfMB4O8g5uPGa3BvBsYxa5YlmXQyvP88GSqsizRNA36vg86J44T0y+y0bYt6ro+CHZdF7oD1GIRlSuKYjQ5E2KKyulaRsyI6VpWVRVOhsSUcwcXY8DF2HAxNlyMDRdjw8XYcDE2XIwNF2PDxdhIL/YJrB+ATR3OQvsGLJ6A3XdoJCC9WA+slsBMahv+w/x6B+7mUmv5PLQmJ72YItOai8jt42lKuxc5S28hzxRcR0yIIudTehXRmfRWMsGpuZqYshUpFTlOKa7p/fgdnAIX+ysXqyjv2oZ+FT+GW3B0eTz/mN7EpBcze92b/YH+J1yMDRdjw8XYcDE2XIwNF2PDxdgwKaaxPk2aRsyImQxixlywmehsDDtrHvgi7KxCWozxdI3K/hpPt4ZRMWAP/tjxaByyhXgAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Notices - IOST' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.tuiost.edu.np/" DesignTimeRectangle="126, -272, 810, 1508" DesignTimeScaleFactor="1.5" FriendlyName="'News and Events'" FullSelectorArgument="&lt;webctrl class='feature-content' parentid='notices' tag='DIV' /&gt;" Guid="4860c7df-cff6-485b-9df9-8443f85ebf44" InformativeScreenshot="584e0af1a3243b775aa0740263f3031b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home - IOST' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:FilterDataTable DataTable="[ExtractDataTable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="932.6666666666666,162.66666666666666" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[ExtractDataTable]" SelectColumnsMode="Keep">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["notice"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">["CSIT"]</InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="932.6666666666666,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="Data\TUNotice.xlsx" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="932.6666666666666,94.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Extraction Completed&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1150" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="2773aca94ca4c981738a75b3fd10768e.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Url="chrome://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

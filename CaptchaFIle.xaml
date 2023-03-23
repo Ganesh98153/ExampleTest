@@ -1,0 +1,199 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CaptchaFIle" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="620.6666666666666,1763.3333333333333" sap2010:WorkflowViewState.IdRef="CaptchaFIle_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="43">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Vision.Core.OCR</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="57">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CaptchaFIle" sap:VirtualizedContainerService.HintSize="630.6666666666666,1698.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strResult" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="True" DisplayName="While" sap:VirtualizedContainerService.HintSize="588.6666666666666,1611.3333333333333" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,1440.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Nepal SBI Bank Ltd: Internet Banking Login" sap:VirtualizedContainerService.HintSize="510,1353.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="a627fe1b-98de-4263-9687-ff71851b1663" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1134" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="strCaptcha" />
+                    <Variable x:TypeArguments="ui:Image" Name="curImage" />
+                    <Variable x:TypeArguments="x:String" Name="curImagePath" />
+                    <Variable x:TypeArguments="x:String" Name="outImagePath" />
+                    <Variable x:TypeArguments="ui:Image" Name="outImageFile" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[curImagePath]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["Data\ImageProcessing\"+ DateTime.Now.ToString("yyyy-MM-dd-hh-mm-ss")+".bmp"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NTakeScreenshot DisplayName="Take Screenshot 'Verification*'" FileName="[curImagePath]" FileNameMode="None" sap:VirtualizedContainerService.HintSize="434,187.33333333333334" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" OutImage="[curImage]" SaveScreenshotTo="Image" ScopeIdentifier="a627fe1b-98de-4263-9687-ff71851b1663" Version="V3">
+                    <uix:NTakeScreenshot.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.onlinesbiglobal.com/NPINB/AuthenticationController?__START_TRAN_FLAG__=Y&amp;FORMSGROUP_ID__=AuthenticationFG&amp;__EVENT_ID__=LOAD&amp;FG_BUTTONS__=LOAD&amp;ACTION.LOAD=Y&amp;AuthenticationFG.LOGIN_FLAG=1&amp;BANK_ID=NSBL&amp;LANGUAGE_ID=001" DesignTimeRectangle="410, 512, 180, 38" DesignTimeScaleFactor="1.5" ElementType="Icon" FriendlyName="'IMG IMAGECAPTCHA'" FullSelectorArgument="&lt;webctrl id='IMAGECAPTCHA' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='IMAGECAPTCHA' tag='IMG' type='' class='' aaname='Please Click On The Icon Next For Audio' /&gt;" Guid="b7f23a7f-470d-4c52-ab23-7504c986afd4" InformativeScreenshot="30503e967221c0540e96f5d3a6d721e9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nepal SBI Bank Ltd: Internet Banking Login' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="298, 513, 105, 24" ElementType="Text" FriendlyName="'Verification*'" FullSelectorArgument="&lt;webctrl id='Verification' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Verification' tag='LABEL' type='' class='loginPanelSimpleTextStyle' aaname='Verification' check:innerText='Verification*' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTakeScreenshot.Target>
+                  </uix:NTakeScreenshot>
+                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="Bitmap originalImage = new Bitmap(in_img);&#xD;&#xA;&#xD;&#xA;int minRedValue = 150;&#xD;&#xA;int maxRedValue = 255;&#xD;&#xA;int minGreenValue = 0;&#xD;&#xA;int maxGreenValue = 100;&#xD;&#xA;int minBlueValue = 0;&#xD;&#xA;int maxBlueValue = 150;&#xD;&#xA;&#xD;&#xA;// Create a blank bitmap with the same size as the original image&#xD;&#xA;Bitmap processedImage = new Bitmap(originalImage.Width, originalImage.Height);&#xD;&#xA;&#xD;&#xA;for (int x = 0; x &lt; originalImage.Width; x++)&#xD;&#xA;{&#xD;&#xA;    for (int y = 0; y &lt; originalImage.Height; y++)&#xD;&#xA;    {&#xD;&#xA;        Color pixelColor = originalImage.GetPixel(x, y);&#xD;&#xA;        if (pixelColor.R &gt;= minRedValue &amp;&amp; pixelColor.R &lt;= maxRedValue&#xD;&#xA;            &amp;&amp; pixelColor.G &gt;= minGreenValue &amp;&amp; pixelColor.G &lt;= maxGreenValue&#xD;&#xA;            &amp;&amp; pixelColor.B &gt;= minBlueValue &amp;&amp; pixelColor.B &lt;= maxBlueValue)&#xD;&#xA;        {&#xD;&#xA;            // Set the pixel color to white if it falls within the red/orange color range&#xD;&#xA;            processedImage.SetPixel(x, y, Color.White);&#xD;&#xA;        }&#xD;&#xA;        else&#xD;&#xA;        {&#xD;&#xA;            // Copy the pixel color if it's not in the red/orange color range&#xD;&#xA;            processedImage.SetPixel(x, y, pixelColor);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    &#xD;&#xA;}&#xD;&#xA;out_image = processedImage;&#xD;&#xA;//processedImage.Save(in_img+&quot;.png&quot;, System.Drawing.Imaging.ImageFormat.Png);&#xD;&#xA;//out_string = in_img+&quot;.png&quot;;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,165.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeCode_2" Language="CSharp">
+                    <ui:InvokeCode.Arguments>
+                      <InArgument x:TypeArguments="ui:Image" x:Key="in_img">
+                        <VisualBasicValue x:TypeArguments="ui:Image" ExpressionText="curImage" />
+                      </InArgument>
+                      <OutArgument x:TypeArguments="ui:Image" x:Key="out_image">
+                        <VisualBasicReference x:TypeArguments="ui:Image" ExpressionText="outImageFile" />
+                      </OutArgument>
+                    </ui:InvokeCode.Arguments>
+                  </ui:InvokeCode>
+                  <p:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" UseLocalServer="{x:Null}" ApiKey="odpKCittpVjiP4PMOueqcFuMWud9V21jV1sPhVxkK50v4GiaiKgMcm2Uo1Kfj+jGiRsm2eINnfo5PKwGSAJofw==" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="434,25.333333333333332" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_2" Image="[outImageFile]" Language="auto" Profile="None" Scale="1" Text="[strCaptcha]" Timeout="200000" />
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,86.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[strCaptcha]" />
+                  <uix:NClick ClickType="Single" DisplayName="Click 'INPUT CHANGE_IMAGECAPTC…'" sap:VirtualizedContainerService.HintSize="434,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a627fe1b-98de-4263-9687-ff71851b1663" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.onlinesbiglobal.com/NPINB/AuthenticationController?__START_TRAN_FLAG__=Y&amp;FORMSGROUP_ID__=AuthenticationFG&amp;__EVENT_ID__=LOAD&amp;FG_BUTTONS__=LOAD&amp;ACTION.LOAD=Y&amp;AuthenticationFG.LOGIN_FLAG=1&amp;BANK_ID=NSBL&amp;LANGUAGE_ID=001" DesignTimeRectangle="642, 586, 27, 33" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'INPUT CHANGE_IMAGECAPTC…'" FullSelectorArgument="&lt;webctrl id='CHANGE_IMAGECAPTCHA' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CHANGE_IMAGECAPTCHA' tag='INPUT' type='Submit' class='formbtn_imgcaptcha' aaname='Click here to Change Image' /&gt;" Guid="aa06b35c-9269-4a6b-9827-a48099be1bb6" ImageBase64="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" InformativeScreenshot="6d9c0cf611ba475922afa7d4a4e08839.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nepal SBI Bank Ltd: Internet Banking Login' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="298, 587, 105, 24" ElementType="Text" FriendlyName="'Verification*'" FullSelectorArgument="&lt;webctrl id='Verification' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Verification' tag='LABEL' type='' class='loginPanelSimpleTextStyle' aaname='Verification' check:innerText='Verification*' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEESURBVDhPldMxagJBFMbxLUzKQEjIdWRhcwWP4A0scgLT6AWEZUHExs7ai8huZ2OCVVjBRv3+w5swDuOSDPzg+eZ7D5Qx8+d52OBB+jKTrfwYanrckbEpHT6YFxnLl1zu4I4MWTfnh19lKWdJDYbIkGXGLejJp/xl2CPLTI8FuewlFezCTM6CMmj+V8mCOmp6J9kY6lSmZkEbNb21PBnqVKZlwTFqegvhBwZ1KnNkQRM1PR7QwFCnMu4NVFEz9GFSd6hYUMh30Ax1LWCmYAHfcWLNWNcCZtxDwpusJH6NqQVkyDJz82eiMZWD3FvAHRk3jN9jjUd5l7nsZGSo6XFHxqay7ArRvAQ1hGIW7AAAAABJRU5ErkJggg==" InformativeScreenshot="5ecf248be291ce67763e004dcf5c40a5.jpg" Selector="&lt;html app='chrome.exe' title='Nepal SBI Bank Ltd: Internet Banking Login' /&gt;" Url="https://www.onlinesbiglobal.com/NPINB/AuthenticationController?__START_TRAN_FLAG__=Y&amp;FORMSGROUP_ID__=AuthenticationFG&amp;__EVENT_ID__=LOAD&amp;FG_BUTTONS__=LOAD&amp;ACTION.LOAD=Y&amp;AuthenticationFG.LOGIN_FLAG=1&amp;BANK_ID=NSBL&amp;LANGUAGE_ID=001" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+    </ui:InterruptibleWhile>
+  </Sequence>
+</Activity>

@@ -1,0 +1,14 @@
+﻿{
+  "Id": "yp_dsemn9kmH9XaPnvARmA",
+  "Reference": "LWMSPen3T0e-0l97rx5IPQ/yp_dsemn9kmH9XaPnvARmA",
+  "ParentRef": "LWMSPen3T0e-0l97rx5IPQ/JWvCGzaXvEKkcAfNJMYlow",
+  "Name": "Enter the",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2023-02-12T15:35:44.0790552Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.1.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-02-12T15:35:44.0790552Z"
+}

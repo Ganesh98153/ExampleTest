@@ -19,8 +19,48 @@ MM cbs_trace_id (8 digits) -- R
 	Txn Status :- Success --- (Sheet Name = MM Success/ MMEod)
 }
 
-Some Queries:
 
-- What to do with Ibank data if its IbankEOD is matched to today IBank Data
-- Similarly in MM
-- What to do with blank cbs trace id
+
+
+- Ibank --- Cbs Matched === Topup Status = Failure === Reverse
+- MM ---- Cbs Matched === (Topup Status = Failure) and Txn Status != "Reverse Success" === Reverse
+- DD -- Cbs Matched ==== (STATUS = Failure) === Reverse
+
+
+https://admin.connectnpay.net/reports
+= Transactions = TopUp details
+= Filter (the day before yesterdays date 12:00AM to yesterdays date 23:59PM)
+= Excel File download
+= Take (Request ID) last 8 digits === TRACE ID (actual Failed) Matched 
+= Unmatched TRACE ID in 
+
+
+- Txn Reversed - Reverse
+- Success - Ignore
+- Failure - Reverse
+- Time out - Wait ---  
+- 
+\\finacle
+
+Amount - Txn AMount == 
+Commission :- from account first three digits + gl a/c(01532850001) 2% Dr
+Principle :- 00511006435 (98%) Dr 
+From a/c[To] :- Credit
+
+Narration :- REV_{Service Attribute} {cbs_trace_id} MM-dd
+
+ 
+
+Menu Option :- ptw
+input box :- r 
+
+
+
+
+
+
+
+
+
+
+

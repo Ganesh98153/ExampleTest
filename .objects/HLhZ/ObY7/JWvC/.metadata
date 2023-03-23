@@ -1,0 +1,13 @@
+﻿{
+  "Id": "JWvCGzaXvEKkcAfNJMYlow",
+  "Reference": "LWMSPen3T0e-0l97rx5IPQ/JWvCGzaXvEKkcAfNJMYlow",
+  "ParentRef": "LWMSPen3T0e-0l97rx5IPQ/ObY7Bh1VG0ueQnvIhpan6g",
+  "Name": "Chrome: State Bank of India - Personal Banking",
+  "Type": "Screen",
+  "Created": "2023-02-12T15:35:09.6974859Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.1.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-02-12T15:35:09.6974859Z"
+}

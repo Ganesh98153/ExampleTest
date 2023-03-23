@@ -1,0 +1,14 @@
+﻿{
+  "Id": "MprypusD1EW_eQDlC2mS6w",
+  "Reference": "LWMSPen3T0e-0l97rx5IPQ/MprypusD1EW_eQDlC2mS6w",
+  "ParentRef": "LWMSPen3T0e-0l97rx5IPQ/JWvCGzaXvEKkcAfNJMYlow",
+  "Name": "Username*",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2023-02-12T15:35:09.8928066Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.1.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-02-12T15:35:09.8928066Z"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="hvT1l0oxyU25Lf5G1qo3aA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGcSURBVDhPhVNNLwNRFL2v1CTCWkm7an8EEgkbumDHH7DwR2y6oxua0iIimqJqOk3ZiMTGhtiohYiGRtGZ10UXqAXnTsti5rUmOZk793zMfTPv0e8lslUSmVeNclaYDLkLlClf+7LBtSFTpFth1rD279JWbggmEkfmAETLMEjguw0kNFFofZST1BUvIkE3Ya6yOaMwqGHILDw+TETk2a940VhSCjsB0wr2ImUSDdMl+B8mvFOEpG0FyXgCt2GDa5XGkDscUFKQZaRPaJEL0hbPecpx9NwhhnwkFJ8KItkdKwqskRje6LVAL+HS5WsNDmg4mhyw1reQJrGHACBAozxp3KXjPQJCtb4Sxh6hsw+i03f+1cPoPTg0/KIyB6RcRJO8woYZgnkQ9WUbTZp34TQeVLuvInQrBD6I+tnBMWrgZkgcvGhIWlUIOgcYMmZ7sVY+B340Cg5R+wBDntgenCHqSd7xd+CQAO7rENRbQlVAHZpES0uerfvmiewfi3AAicO3XhhmQRaAW6GbIUwYRF0EjsHNsYa1/vlNOIl+ABbZQBym9a8PAAAAAElFTkSuQmCC" Selector="&lt;html app='chrome.exe' title='State Bank of India - Personal Banking' /&gt;" Title="State Bank of India - Personal Banking" Url="https://retail.onlinesbi.sbi/retail/login.htm#">
+      <imageRef attrName="InformativeScreenshot" originalValue="6ab0d39b9133a8f03c9f2d326828d7d8.jpg" xmlns="">0wvXSK6g_6Ui-jJDy-hMMkg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

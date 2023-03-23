@@ -1,0 +1,119 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Goenka" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="496,822.6666666666666" sap2010:WorkflowViewState.IdRef="Goenka_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Goenka" sap:VirtualizedContainerService.HintSize="476,758" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Vipassana" sap:VirtualizedContainerService.HintSize="434,670.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c3d87924-70ca-4072-a62c-dd7ded1f31d7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,451.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck" sap:VirtualizedContainerService.HintSize="358,159.33333333333334" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="c3d87924-70ca-4072-a62c-dd7ded1f31d7" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.dhamma.org/en/portal/student_apps/12508580/pages/1/edit" ContentHash="lTF7tzV-KkKlstLedLDGmw" DesignTimeRectangle="225, 834, 20, 20" DesignTimeScaleFactor="1.5" ElementType="RadioButton" FriendlyName="'INPUT item_5-2'" FullSelectorArgument="&lt;webctrl id='item_5-2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='item_5-2' tag='INPUT' type='radio' class='' aaname='No' /&gt;" Guid="70cc0bd4-765c-4279-b7e3-a72f2596b626" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFBSURBVEhL7ZWxj0RAFMbvr0ZQCVEhIVEobKGSqCQKku2VKo1CQaFRKES2epc3O7cxa91xu/aa+3Xz5k2+53tvxgcczN8L5HkOvu+DoijA8zyIogimaUIcx9A0Dc1aZ1WgKArQdR04jgPDMCCKIsiyDJIkgdPpBIIgkL0wDOFyudBTSx4KnM9ncth1XaiqikZZpmmCNE1JnmVZ0Pc93WFZCKAleAgr3gIWIMsy2LZNIyyMwDAMxGO0YA9lWZKi0L57GAFMwMSu62hkO/jFOATjONLIFUYAmxoEAV3tAycKi0OL59wEsEmPEvagaRqZqjk3gbquicDa1GwBp87zPLq68j6BV1ikquq6RcgzTW7b9vsmI4ePKV40SZKOu2jIb58Kx3FohGUhgBz62H1x6HM9By27/+FgxU//cF7Fv8APAHwCwD16qCr3+JIAAAAASUVORK5CYII=" InformativeScreenshot="20f68bb76e9b6141683fba2731703710.png" Reference="LWMSPen3T0e-0l97rx5IPQ/6_L2Wc9CW0OKTQpv3xKB2w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vipassana' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="259, 825, 29, 41" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='No' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='No' tag='LABEL' type='' class='' check:innerText='No' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAtCAYAAAAgJgIUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH7SURBVFhH7ZS/S0JRFMf7L/wLGsOppoKGoMGpocVRh7CtIWirKWiyKUIwxEdIUojgJC3ig4YXREENRYRgqBBlwQOD4Nu5951r5bvPzOjHcD9wkXfuj/PxnvPeCP4BRkJhJBRGQmEkFEZCYSQURkLhk3A2UgiNpjCzfo4Ox3S09nO0LoeDBge+QaBEaDSD5LHLUT8/LzGXQ2yafmdLcAI8fl5iugznqIQZupHI5pW2LL9QDroBuKiucllOnnn2jX4S7QsHycUMJsNifwpjUxksbTi4fOQFPfSRINxTrImDZss4e5HTXYIkaoU8xmVPacZEHqU6L3xHfwmiUylijA6IbN9wxEMr0bARE8nCFpJ2Ex0l7jZR3bTkOaG4jRaHFZ9KAA84XBIxC7vXHCJ0ErVshmIprFV03ezCWU/TfBpbFxxiBpAg7h2siLLMV1Djf+eXeGJZ2ttTui7U7EIyUXjggMdgEkSrkJPXGc3ees8+iTscxPV7uxx7ErH9Ow54DCwhkpQWxBwlpubySzzz21RENehT+92bkNRtJERZqLmcPU1P7FoySVBPeJLD9sQ7ajI5XWlcJPwo0e2dfm+H6CsOK74sgZcm116MHgmibRcRkXOaMex3Qst1BVF5sF9C0jjHzrI1/BfzLzASCiOhMBIKI6EwEgojoTASHsArImAdlsIEniwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck" sap:VirtualizedContainerService.HintSize="358,159.33333333333334" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="c3d87924-70ca-4072-a62c-dd7ded1f31d7" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.dhamma.org/en/portal/student_apps/12508580/pages/1/edit" ContentHash="RRZSWmy-n0aMMMFMrUzoVQ" DesignTimeRectangle="225, 787, 20, 20" DesignTimeScaleFactor="1.5" ElementType="RadioButton" FriendlyName="'INPUT item_1-1'" FullSelectorArgument="&lt;webctrl id='item_1-1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='item_1-1' tag='INPUT' type='radio' class='' aaname='Male' /&gt;" Guid="269ee201-88f5-452d-b993-6a78d1425bc9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFBSURBVEhL7ZWxj0RAFMbvr0ZQCVEhIVEobKGSqCQKku2VKo1CQaFRKES2epc3O7cxa91xu/aa+3Xz5k2+53tvxgcczN8L5HkOvu+DoijA8zyIogimaUIcx9A0Dc1aZ1WgKArQdR04jgPDMCCKIsiyDJIkgdPpBIIgkL0wDOFyudBTSx4KnM9ncth1XaiqikZZpmmCNE1JnmVZ0Pc93WFZCKAleAgr3gIWIMsy2LZNIyyMwDAMxGO0YA9lWZKi0L57GAFMwMSu62hkO/jFOATjONLIFUYAmxoEAV3tAycKi0OL59wEsEmPEvagaRqZqjk3gbquicDa1GwBp87zPLq68j6BV1ikquq6RcgzTW7b9vsmI4ePKV40SZKOu2jIb58Kx3FohGUhgBz62H1x6HM9By27/+FgxU//cF7Fv8APAHwCwD16qCr3+JIAAAAASUVORK5CYII=" InformativeScreenshot="24b834e621c9a9f05f4d9471d44f6cea.png" Reference="LWMSPen3T0e-0l97rx5IPQ/WaNQJOh2O0OF5nf9j746vg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vipassana' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="259, 778, 48, 41" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='Male' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Male' tag='LABEL' type='' class='' check:innerText='Male' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAAtCAYAAADhoUi4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMTSURBVGhD7ZZPSxtBGIf7LfIJcpSc9FTBg+DBUwmCCL3YQ9GDkJs3g4eKJ3sQKZGAGJbQYA7B0ILYwpJAhZUWI0pRJIlU/INoDAQiBH59Z3e22d3M7qaCMC3zwJDNO7Pv7rMz8+6+wH+GEpIdJSQ7Skh2lJDsKCHZUUKyo4SejcsypqMpTG/d8sDT6BEyllOIUOJINAOtxoMB1LUMH5/Cyj4PPoVnFYqlMEDJR1dPedSPKtZGaCyNl1topIBkgv3uoNLhHSIOdzAaTWNttSi5ULSIUrlgztJS+ZH3eHlEaZHGTugobWXlFzI6p+ZyiiQMNHifi/YBknQDU9oFroOELo+gLeQwPsTyUhtKI7Fs4OSB99sECT1UUVzu5hgYzmB+/QjXgtXjL0THldU0HedQvLP6nDS2c3/6fIVoSb5kEqJGM1vnw0z8hH7tIWE/DE8bmPyKSpuP4wQKoaZjik5ks+DmAtoEJVw8AMvnP0NNnJSrqN+1+H+idYXdBfagNqCd8RhDKHSPXbaXYxmslK/QtmekfY/KZtbcEt57CxbCLfJv6P8rz9M80xGnZPb+ClxyIvYFRUQkxGOJ7XsecHKF/OveewsRspcWVbJDHiDMpeiogL5CnSbqX3QkZzcQH2Z53S1MqK0Xes7pbd17ZYQK2ZvfXl7s/xK9d+Kb3akWCnXoCb71XtzdwoTsvMHtb4Xs8hwroERG1lNzf0WIhKyZTWF8XodRa6Lh3Lx9LrnGJyvH0jce6IM+hAjzBcrW8jmKc9Q/5y7lIiErTxb5Sx5wYH8uhQnh2Lru6Lsja3X0QX9C/BMnQuVzkC6Q1N0vW5FQ5QOrZCnMfDzvVqfWLSpbecQpD6tQoUJ2UaL41PvvOLlxXLfdQqNWhXHW5AGLPoUcH6F86TkR7iGqhKzkm+c4WyyL4o89zNBxuBAR8B5izTu+byHcGUhQAtEHq1CIaByXkZxMm7PB+sdnP8O4YT0/seId7yfEeLjA7noe02NdkcGxHJJa79dCj9C/jhKSHSUkO0pIdpSQ7Cgh2VFCsqOE5Ab4DdlZkd3EE/EJAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="QzpMhCA_Q0ihK6cXbVy2Tw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH0SURBVDhPnVNNTxNRFK0r98QViXsWsNGNxg2FxI4ETWyIEL5CTFCotEBLK7RTSqZ0ho9C26HzPdOhQxWVxAXGCMSNUWDtb9D/oIuSy33DczERGuAkL/Peyz3nnXveG98/TOkb9+j0epjUNp7PmEo7XV4dyU2jN24pfxOWWgopxdt0+/IIqyV/3FQgtWkCuoHRcv7bcGkp+CzP3aAljTFjyCNJ2wC2asK8U4FpXYLhogB9+ezRqLTWRssuRsyQcoS4+NYB1rEA83AFXkhrMFjg/3Rwr/tp6flA6++yb6qw/GEbMjUb5mwdxqR1GEKR4MoCBHLJOpNLDdLy/5EwlZ101QJ+uwZZ4gJbiZkyvEQHROApji6BrTN8yk8pXkzr5Y+zlgZJPJkIzeKXZILhkhYIGRieJU4OKMWLKb1sYJCA1+iG6ApUDQyzDK+UIjxZnseRgUc8+4tSvMDCDAYJMRQh1xnFecJWIb11FugAZtG5OAcPuPgOpXgRVsUAsUvegCuE/ZM5iwLoDgawDUZgfz5e5ZopxQu0eRPH75BccC1H0Qk5eUITQXhf+9qzygW6l9KNH9W4XAhOqKV6RBXd3tHFCbYS3T8+av10+L2JljXGmLz+MKKJFfw7VSTfods+68vnu87B3i26vB52D3+0oMh9ukT4fKehTiICWIXuLwAAAABJRU5ErkJggg==" InformativeScreenshot="58fad854e4a02952de4ba9e4454c45dd.jpg" Reference="LWMSPen3T0e-0l97rx5IPQ/lXfGP3f0vU-16wFWS0vxCQ" Selector="&lt;html app='chrome.exe' title='Vipassana' /&gt;" Title="Vipassana" Url="https://www.dhamma.org/en/portal/student_apps/12508580/pages/1/edit" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,222 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="MultipleColumnNameExcelAutomation" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="620.6666666666666,2456" sap2010:WorkflowViewState.IdRef="MultipleColumnNameExcelAutomation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="31">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="48">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="MultipleColumnNameExcelAutomation" sap:VirtualizedContainerService.HintSize="630.6666666666666,2391.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtDuplicateTable" />
+      <Variable x:TypeArguments="scg:List(sd:DataTable)" Name="ListTable" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="ListSheetNames" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtKaachaLedger" />
+      <Variable x:TypeArguments="x:Int32" Name="MailCounter" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="False" DataTable="[dtDuplicateTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="588.6666666666666,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\DataFromDuplicateColumnaName\VA05-10-02-2023.xlsx" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="False" DataTable="[dtKaachaLedger]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="588.6666666666666,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="Data\DataFromDuplicateColumnaName\zrv05.xlsx" />
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Console.WriteLine(&quot;Code executions started from here&quot;);&#xD;&#xA;DataRow firstRow = DuplicateTable.Rows[0];&#xD;&#xA;Dictionary&lt;string, int&gt; dict = new Dictionary&lt;string, int&gt;();&#xD;&#xA;for (int i = 0; i &lt; firstRow.ItemArray.Length; i++)&#xD;&#xA;{&#xD;&#xA;    string rowName = firstRow[i].ToString();&#xD;&#xA;    int maincounter = 0;&#xD;&#xA;    for(int j=0; j &lt; i; j++)&#xD;&#xA;    {&#xD;&#xA;        if(rowName == firstRow[j])&#xD;&#xA;        {&#xD;&#xA;            if(dict.ContainsKey(rowName))&#xD;&#xA;            {&#xD;&#xA;                maincounter = dict[rowName];&#xD;&#xA;                maincounter++;&#xD;&#xA;                firstRow[i] = rowName + maincounter.ToString();&#xD;&#xA;            }&#xD;&#xA;            else&#xD;&#xA;            {&#xD;&#xA;                maincounter++;&#xD;&#xA;                firstRow[i] = rowName + maincounter.ToString();&#xD;&#xA;                dict.Add(rowName, maincounter);&#xD;&#xA;            }&#xD;&#xA;            Console.WriteLine(&quot;Duplicate Column Name found and Renamed as &quot; + firstRow[i]);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for (int i = 0; i &lt; firstRow.ItemArray.Length; i++)&#xD;&#xA;{&#xD;&#xA;    string columnName = firstRow[i].ToString();&#xD;&#xA;    DuplicateTable.Columns[i].ColumnName = columnName;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;DuplicateTable.Rows.Remove(firstRow);&#xD;&#xA;&#xD;&#xA;// For Kaacha Ledger Table&#xD;&#xA;DataRow firstRow1 = in_KaachaLedger.Rows[0];&#xD;&#xA;Dictionary&lt;string, int&gt; dict1 = new Dictionary&lt;string, int&gt;();&#xD;&#xA;for (int i = 0; i &lt; firstRow1.ItemArray.Length; i++)&#xD;&#xA;{&#xD;&#xA;    string rowName = firstRow1[i].ToString();&#xD;&#xA;    int maincounter = 0;&#xD;&#xA;    for(int j=0; j &lt; i; j++)&#xD;&#xA;    {&#xD;&#xA;        if(rowName == firstRow1[j])&#xD;&#xA;        {&#xD;&#xA;            if(dict1.ContainsKey(rowName))&#xD;&#xA;            {&#xD;&#xA;                maincounter = dict1[rowName];&#xD;&#xA;                maincounter++;&#xD;&#xA;                firstRow1[i] = rowName + maincounter.ToString();&#xD;&#xA;            }&#xD;&#xA;            else&#xD;&#xA;            {&#xD;&#xA;                maincounter++;&#xD;&#xA;                firstRow1[i] = rowName + maincounter.ToString();&#xD;&#xA;                dict1.Add(rowName, maincounter);&#xD;&#xA;            }&#xD;&#xA;            Console.WriteLine(&quot;Duplicate Column Name found and Renamed as &quot; + firstRow1[i]);&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for (int i = 0; i &lt; firstRow1.ItemArray.Length; i++)&#xD;&#xA;{&#xD;&#xA;    string columnName = firstRow1[i].ToString();&#xD;&#xA;    in_KaachaLedger.Columns[i].ColumnName = columnName;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;in_KaachaLedger.Rows.Remove(firstRow1);&#xD;&#xA;" DisplayName="Invoke Code for Duplicate Column Name" sap:VirtualizedContainerService.HintSize="588.6666666666666,165.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+      <ui:InvokeCode.Arguments>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="DuplicateTable">[dtDuplicateTable]</InOutArgument>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_KaachaLedger">[dtKaachaLedger]</InOutArgument>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="//Saving data in notepad only unique value from sold to value&#xA;&#xA;var uniqueWD_Code = DuplicateTable.AsEnumerable()&#xA;&#x9;.Select(r =&gt; r.Field&lt;string&gt; (&quot;Sold-to party&quot;)).Distinct();&#xA;&#xA;Console.WriteLine(&quot;Total WD Code Found is&quot; + uniqueWD_Code.Count());&#xA;&#xA;if(uniqueWD_Code.Count()&gt;0)&#xA;{&#xA;&#x9;File.WriteAllLines(@&quot;Data\DataFromDuplicateColumnaName\uniqueWD_Code.txt&quot;,uniqueWD_Code);&#xA;&#x9;Console.WriteLine(&quot;Successfully Extracted Uniques in WD Codes&quot;);&#xA;}&#xA;else&#xA;{&#xA;&#x9;Console.WriteLine(&quot;Couldn't Written Wd_Codes due to empty wd code list&quot;);&#xA;}&#xA;&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="588.6666666666666,165.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeCode_2" Language="CSharp">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="DuplicateTable">[dtDuplicateTable]</InArgument>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="&#xD;&#xA;listOfTable = new List&lt;DataTable&gt;();&#xD;&#xA;listOfSheetName = new List&lt;string&gt;();&#xD;&#xA;DataTable tempTable = new DataTable();&#xD;&#xA;        tempTable.Columns.Add(&quot;WD_Code&quot;, typeof(string));&#xD;&#xA;        tempTable.Columns.Add(&quot;Net_Value&quot;, typeof(double));&#xD;&#xA;        tempTable.Columns.Add(&quot;Division&quot;, typeof(string));&#xD;&#xA;&#xD;&#xA;foreach (DataRow row in DuplicateTable.Rows)&#xD;&#xA;        {&#xD;&#xA;            tempTable.Rows.Add(row[&quot;Sold-to party&quot;], row[&quot;Net Value&quot;], row[&quot;Division&quot;]);&#xD;&#xA;        }&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;//listOfTable.Add(tempTable);&#xD;&#xA;//listOfSheetName.Add(&quot;Selected3Column&quot;);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;Console.WriteLine(&quot;Completed selecting 3 column&quot;);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;DataTable tempTable1 = new DataTable();&#xD;&#xA;        tempTable1.Columns.Add(&quot;WD_Code&quot;, typeof(string));&#xD;&#xA;        tempTable1.Columns.Add(&quot;Net_Value&quot;, typeof(double));&#xD;&#xA;&#x9;&#x9;tempTable1.Columns.Add(&quot;CG_Division&quot;, typeof(double));&#xD;&#xA;&#x9;&#x9;tempTable1.Columns.Add(&quot;MB_Division&quot;, typeof(double));&#xD;&#xA;&#x9;&#x9;tempTable1.Columns.Add(&quot;FC_Division&quot;, typeof(double));&#xD;&#xA;&#x9;&#x9;tempTable1.Columns.Add(&quot;AG_Division&quot;, typeof(double));&#xD;&#xA;&#x9;&#x9;tempTable1.Columns.Add(&quot;Balance_Limit&quot;, typeof(double));&#xD;&#xA;&#x9;&#x9;tempTable1.Columns.Add(&quot;Customer_Name&quot;, typeof(string));&#xD;&#xA;&#x9;&#x9;tempTable1.Columns.Add(&quot;Net Balance&quot;, typeof(double));&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;var uniqueWD_Code = DuplicateTable.AsEnumerable()&#xD;&#xA;&#x9;.Select(r =&gt; r.Field&lt;string&gt; (&quot;Sold-to party&quot;)).Distinct();&#xD;&#xA;foreach(string item in uniqueWD_Code)&#xD;&#xA;{&#xD;&#xA;&#x9;string WD_Name = item;&#xD;&#xA;&#x9;double total_Nav_Value = (from row in tempTable.AsEnumerable()&#xD;&#xA;             where row.Field&lt;string&gt;(&quot;WD_Code&quot;) == item&#xD;&#xA;             select row.Field&lt;double&gt;(&quot;Net_Value&quot;)).Sum();&#xD;&#xA;&#x9;double total_CG_Div = (from row in tempTable.AsEnumerable()&#xD;&#xA;             where row.Field&lt;string&gt;(&quot;WD_Code&quot;) == item &amp;&amp; row.Field&lt;string&gt;(&quot;Division&quot;) == &quot;CG&quot;&#xD;&#xA;             select row.Field&lt;double&gt;(&quot;Net_Value&quot;)).Sum();&#xD;&#xA;&#x9;double total_MB_Div = (from row in tempTable.AsEnumerable()&#xD;&#xA;             where row.Field&lt;string&gt;(&quot;WD_Code&quot;) == item &amp;&amp; row.Field&lt;string&gt;(&quot;Division&quot;) == &quot;MB&quot;&#xD;&#xA;             select row.Field&lt;double&gt;(&quot;Net_Value&quot;)).Sum();&#xD;&#xA;&#x9;double total_FC_Div =(from row in tempTable.AsEnumerable()&#xD;&#xA;             where row.Field&lt;string&gt;(&quot;WD_Code&quot;) == item &amp;&amp; row.Field&lt;string&gt;(&quot;Division&quot;) == &quot;FC&quot;&#xD;&#xA;             select row.Field&lt;double&gt;(&quot;Net_Value&quot;)).Sum();&#xD;&#xA;&#x9;double total_AG_DIv = (from row in tempTable.AsEnumerable()&#xD;&#xA;             where row.Field&lt;string&gt;(&quot;WD_Code&quot;) == item &amp;&amp; row.Field&lt;string&gt;(&quot;Division&quot;) == &quot;AG&quot;&#xD;&#xA;             select row.Field&lt;double&gt;(&quot;Net_Value&quot;)).Sum();&#xD;&#xA;&#x9;double balanceLimit = (from row in in_KaachaLedger.AsEnumerable()&#xD;&#xA;             where row.Field&lt;string&gt;(&quot;Customer Code&quot;) == item&#xD;&#xA;             select row.Field&lt;double&gt;(&quot;Balance Limit&quot;)).FirstOrDefault();&#xD;&#xA;&#x9;string customerName = (from row in in_KaachaLedger.AsEnumerable()&#xD;&#xA;             where row.Field&lt;string&gt;(&quot;Customer Code&quot;) == item&#xD;&#xA;             select row.Field&lt;string&gt;(&quot;Customer Name&quot;)).FirstOrDefault();&#xD;&#xA;&#x9;double netBalance = balanceLimit - total_Nav_Value;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;tempTable1.Rows.Add(WD_Name, total_Nav_Value, total_CG_Div,total_MB_Div,total_FC_Div,total_AG_DIv,balanceLimit,customerName,netBalance);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;listOfTable.Add(tempTable1);&#xD;&#xA;listOfSheetName.Add(&quot;MainSheet&quot;);&#xD;&#xA;&#xD;&#xA;Console.WriteLine(&quot;Code executions ended from here&quot;);" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="588.6666666666666,165.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeCode_3" Language="CSharp">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="DuplicateTable">[dtDuplicateTable]</InArgument>
+        <OutArgument x:TypeArguments="scg:List(x:String)" x:Key="listOfSheetName">[ListSheetNames]</OutArgument>
+        <OutArgument x:TypeArguments="scg:List(sd:DataTable)" x:Key="listOfTable">[ListTable]</OutArgument>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_KaachaLedger">[dtKaachaLedger]</InArgument>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <ui:ForEach x:TypeArguments="sd:DataTable" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="588.6666666666666,468.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[ListTable]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="sd:DataTable">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataTable" Name="currentItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,339.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[currentItem]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[ListSheetNames(ListTable.IndexOf(currentItem))]" WorkbookPath="Data\DataFromDuplicateColumnaName\MainColumnNameFIle.xlsx" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="358,96" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Successfully written &quot; +ListSheetNames(ListTable.IndexOf(currentItem))]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEach>
+    <Assign sap:VirtualizedContainerService.HintSize="588.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[MailCounter]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="588.6666666666666,798" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="552,718" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ListTable(0)]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,630.6666666666666" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,514" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="mailBody" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="&#xD;&#xA;if(in_DataRow.Field&lt;double&gt;(&quot;Net Balance&quot;)&lt;0)&#xD;&#xA;{&#xD;&#xA;&#x9;&#xD;&#xA;string orderAmount =  Math.Round(in_DataRow.Field&lt;double&gt;(&quot;Net_Value&quot;),2).ToString();&#xD;&#xA;string cigaretteAmount =  Math.Round(in_DataRow.Field&lt;double&gt;(&quot;CG_Division&quot;),2).ToString();&#xD;&#xA;string matchesAmount= Math.Round(in_DataRow.Field&lt;double&gt;(&quot;MB_Division&quot;),2).ToString();&#xD;&#xA;string confectioneryAmount= Math.Round(in_DataRow.Field&lt;double&gt;(&quot;FC_Division&quot;),2).ToString();&#xD;&#xA;string agarbattiAmount =  Math.Round(in_DataRow.Field&lt;double&gt;(&quot;AG_Division&quot;),2).ToString();&#xD;&#xA;string accountBalance= Math.Round(in_DataRow.Field&lt;double&gt;(&quot;Balance_Limit&quot;),2).ToString();&#xD;&#xA;string customerName= in_DataRow.Field&lt;string&gt;(&quot;Customer_Name&quot;).ToString();&#xD;&#xA;string shortAmount= Math.Round(in_DataRow.Field&lt;double&gt;(&quot;Net Balance&quot;),2).ToString().TrimStart('-').ToString();&#xD;&#xA;&#xD;&#xA;string fromMail = &quot;ganesh.tiwari552@gmail.com&quot;;&#xD;&#xA;string fromPassword = &quot;bsbbldimxqovgczs&quot;;&#xD;&#xA;//string attachmentPath = in_Path;&#xD;&#xA;MailMessage mailMessage = new MailMessage();&#xD;&#xA;mailMessage.From = new MailAddress(fromMail, &quot;Ganesh ROBOT&quot;);&#xD;&#xA;mailMessage.Subject = &quot;WD_COde Balance&quot;;&#xD;&#xA;&#xD;&#xA;mailMessage.To.Add(new MailAddress(in_toReceiver));&#xD;&#xA;//mailMessage.To.Add(new MailAddress(in_toReceiver1));&#xD;&#xA;//mailMessage.To.Add(new MailAddress(in_toReceiver2));&#xD;&#xA;&#xD;&#xA;mailMessage.To.Add(new MailAddress(in_toCCReceiver1));&#xD;&#xA;//mailMessage.CC.Add(new MailAddress(in_toCCReceiver2));&#xD;&#xA;//mailMessage.CC.Add(new MailAddress(in_toCCReceiver3));&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;&#xD;&#xA;mailMessage.Body =@&quot;&lt;html&gt;&#xD;&#xA;  &lt;head&gt;&#xD;&#xA;    &lt;style&gt;&#xD;&#xA;      body {&#xD;&#xA;        font-family: Arial, sans-serif;&#xD;&#xA;        font-size: 14px;&#xD;&#xA;        line-height: 1.5;&#xD;&#xA;      }&#xD;&#xA;      table {&#xD;&#xA;        border-collapse: collapse;&#xD;&#xA;        width: 100%;&#xD;&#xA;      }&#xD;&#xA;      th, td {&#xD;&#xA;        border: 1px solid #ddd;&#xD;&#xA;        padding: 8px;&#xD;&#xA;        text-align: left;&#xD;&#xA;      }&#xD;&#xA;      th {&#xD;&#xA;        background-color: #f2f2f2;&#xD;&#xA;      }&#xD;&#xA;    &lt;/style&gt;&#xD;&#xA;  &lt;/head&gt;&#xD;&#xA;  &lt;body&gt;&#xD;&#xA;    &lt;p&gt;Dear &lt;strong&gt;&quot;+customerName+@&quot;&lt;/strong&gt;,&lt;/p&gt;&#xD;&#xA;    &lt;p&gt;Your Sales Order for the day is NRs. &lt;strong&gt;&quot;+orderAmount+@&quot;&lt;/strong&gt;. The breakup of the same is as under:&lt;/p&gt;&#xD;&#xA;    &lt;table&gt;&#xD;&#xA;      &lt;thead&gt;&#xD;&#xA;        &lt;tr&gt;&#xD;&#xA;          &lt;th&gt;Product&lt;/th&gt;&#xD;&#xA;          &lt;th&gt;Amount&lt;/th&gt;&#xD;&#xA;        &lt;/tr&gt;&#xD;&#xA;      &lt;/thead&gt;&#xD;&#xA;      &lt;tbody&gt;&#xD;&#xA;        &lt;tr&gt;&#xD;&#xA;          &lt;td&gt;Cigarette&lt;/td&gt;&#xD;&#xA;          &lt;td&gt;NRS. &lt;strong&gt;&quot;+cigaretteAmount+@&quot;&lt;/strong&gt;&lt;/td&gt;&#xD;&#xA;        &lt;/tr&gt;&#xD;&#xA;        &lt;tr&gt;&#xD;&#xA;          &lt;td&gt;Agarbatti&lt;/td&gt;&#xD;&#xA;          &lt;td&gt;NRS. &lt;strong&gt;&quot;+agarbattiAmount+@&quot;&lt;/strong&gt;&lt;/td&gt;&#xD;&#xA;        &lt;/tr&gt;&#xD;&#xA;        &lt;tr&gt;&#xD;&#xA;          &lt;td&gt;Matches:&lt;/td&gt;&#xD;&#xA;          &lt;td&gt;NRS. &lt;strong&gt;&quot;+matchesAmount+@&quot;&lt;/strong&gt;&lt;/td&gt;&#xD;&#xA;        &lt;/tr&gt;&#xD;&#xA;        &lt;tr&gt;&#xD;&#xA;          &lt;td&gt;Confectionery:&lt;/td&gt;&#xD;&#xA;          &lt;td&gt;NRS. &lt;strong&gt;&quot;+confectioneryAmount+@&quot;&lt;/strong&gt;&lt;/td&gt;&#xD;&#xA;        &lt;/tr&gt;&#xD;&#xA;      &lt;/tbody&gt;&#xD;&#xA;    &lt;/table&gt;&#xD;&#xA;    &lt;p&gt;The available balance with SNPL in your account is NRS. &lt;strong&gt;&quot;+accountBalance+@&quot;&lt;/strong&gt; which is short by NRs. &lt;strong&gt;&quot;+shortAmount+@&quot;&lt;/strong&gt;.&lt;/p&gt;&#xD;&#xA;    &lt;p&gt;Request you to please deposit the same to our Bank Account immediately to get the Sales Order in Full.&lt;/p&gt;&#xD;&#xA;    &lt;p&gt;Regards,&lt;/p&gt;&#xD;&#xA;    &lt;p&gt;Surya Nepal&lt;/p&gt;&#xD;&#xA;  &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&quot;;&#xD;&#xA;&#xD;&#xA;mailMessage.IsBodyHtml = true;&#xD;&#xA;&#xD;&#xA;//Attachment attachment;&#xD;&#xA;//attachment = new Attachment(attachmentPath);&#xD;&#xA;//mailMessage.Attachments.Add(attachment);&#xD;&#xA;&#xD;&#xA;var smtpClient = new SmtpClient(&quot;smtp.gmail.com&quot;, 587)&#xD;&#xA;{&#xD;&#xA;Port=587,&#xD;&#xA;Credentials = new System.Net.NetworkCredential(fromMail, fromPassword),&#xD;&#xA;EnableSsl = true&#xD;&#xA;};&#xD;&#xA;try&#xD;&#xA;{&#xD;&#xA;smtpClient.Send(mailMessage);&#xD;&#xA;}&#xD;&#xA;catch (Exception ex)&#xD;&#xA;{&#xD;&#xA;&#x9;Console.WriteLine(&quot;Exception caught while sending message {0}&quot;, ex.ToString());&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;&#x9;Console.WriteLine(&quot;Balance is sufficient to carry sales order&quot;);&#xD;&#xA;}" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="434,165.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeCode_4" Language="CSharp">
+                    <ui:InvokeCode.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_toReceiver">prabin.chand@bitskraft.com</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_toCCReceiver1">ganesh.tiwari@bitskraft.com</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_toCCReceiver2">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_toCCReceiver3">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_toReceiver1">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="sd:DataRow" x:Key="in_DataRow">[CurrentRow]</InArgument>
+                    </ui:InvokeCode.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeCode>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[MailCounter]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[MailCounter+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,96" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Total Mail sent is  &quot;+ MailCounter.ToString + &quot;\n Mail Sent for WD Code of Name : &quot; + CurrentRow.Item(&quot;WD_Code&quot;).ToString]" />
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+          </ui:ForEachRow>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>

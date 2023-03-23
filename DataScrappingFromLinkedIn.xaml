@@ -1,0 +1,133 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DataScrappingFromLinkedIn" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="576,780" sap2010:WorkflowViewState.IdRef="DataScrappingFromLinkedIn_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="44">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="DataScrappingFromLinkedIn" sap:VirtualizedContainerService.HintSize="476,715.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: LinkedIn" sap:VirtualizedContainerService.HintSize="434,628" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="2292edec-b1e3-47da-92b1-2d2f78dfb480" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,408.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Name' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Post' ReferenceName='Column1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='New column 2 Src' ReferenceName='Column2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='src'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="358,160" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="2292edec-b1e3-47da-92b1-2d2f78dfb480" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.linkedin.com/mynetwork/invite-connect/connections/" DesignTimeRectangle="646, 1023, 158, 27" DesignTimeScaleFactor="1.350000023841858" ElementType="Text" FriendlyName="'Show more results'" FullSelectorArgument="&lt;webctrl parentid='ember4679' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ember4679' tag='SPAN' type='' class='artdeco-button__text' aaname='     Show more results ' check:innerText='Show more results' /&gt;" Guid="8dd1165b-9ac4-4df9-8945-114d9d95dc3d" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="229, 1020, 991, 32" ElementType="Button" FriendlyName="'Show more results'" FullSelectorArgument="&lt;webctrl id='ember4679' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ember4679' tag='BUTTON' type='button' class='artdeco-button artdeco-button--muted artdeco-button--1 artdeco-button--full artdeco-button--secondary ember-view scaffold-finite-scroll__load-button' aaname='      Show more results ' check:innerText='Show more results' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="197, 394, 1056, 41271" DesignTimeScaleFactor="1.350000023841858" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='ember3924' tag='UL' /&gt;" Guid="0e3a88cd-44eb-400a-876e-035fc0ee8932" InformativeScreenshot="118eab578a00025f813878bcd343adf2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="Data\ConnectionList.xlsx" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALiSURBVFhH7VfNaxNBFN/UGJMUvdSi0Kog1YvgwYtHwZPnFj0oCFbT5GCUVmwFxYKotQdvKqJ/QRUUNRTEotmVpk1bY1H8uNh8WGtpU6utkkQ3ec5vshO3aTcNslty6IMfmX3zPn4zbzLDkypCXB4ZqHJ7lFp3i1JvMWrcPsXm9ipacm9QcpzstblalCY2GWH4bDHCDE1r/M9sTl9QktgHUKNN0AoBC8VuFwhga8CuYOTyKLTuhMyBsX7OBCAXci5NAAm3tIXo0M13HNvODJhNwpgAEm1lCXvCU/Qrk2VQqWdoihEylYQxAWz5Qbbqn2mVhGAMHeZgYwIqmEC+/qIEKi8DSoCyrEgJACTCwcOqARzIcpKzu4TblWFbmgBgPy5T1bEgx1o2RnDoUQZ8C4iE0K/3vaRNp/qp1t9fsNXH1MGYAIIhyLn7Y3Q1EOfAGDoEPHD9DXUFEnTlSZw6H8Zo94Vh2nw6RIdvv6e7wQl6+naGAqNJusb89l56RdWLk5cm4GQEdnSEafxbWjuCxMfQ2ZuDPLGQ+ZRKFx9E6VFkmp8XveQYotMpOnrnA1V7LSLwW83R5I8M5ZDNQOLJFO3rek3OheUwh4AQNZujxEyaIrH5PCFNL+TW8y+0gZ0PxNdgHoHMnyzd6BunPZ0jVN86QPu7R2lobE6bzctIdK74JjWPQPDjLNW1hsjBthgJ8M84wg4k7g8h8WSaGtoHeWzk0HKZQ6C7N7Hg7+b0yLTr/DB9/Z7RLP75W0Lg8uMYXzV8hX9D+9L+K0bAyH+VwCqBsglsPzvIL4+J2TQHxtDZm2XquPeJ33YIil98O4oIGPmXRQDAswoHsAYwhg5PMl6+nZoev3glxVO9nL/OpjQBAGz1EHrcdnp9cXIBvQ1QNL+IAJoENAvFhlYBTRCaIUlCe2T397HWTG7UJsDOSrCFyo32thc2l0/O94dMAbDmVAYrbM3/om5ZeOSNaITREFeASNJf503cP1oKQCkAAAAASUVORK5CYII=" InformativeScreenshot="9884dc1cd7cb9e2770e0b7105b6d50cf.jpg" Selector="&lt;html app='chrome.exe' title='LinkedIn' /&gt;" Url="https://www.linkedin.com/mynetwork/invite-connect/connections/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

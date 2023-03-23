@@ -1,0 +1,261 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtractTableSupremCourt" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="803.3333333333334,3102.6666666666665" sap2010:WorkflowViewState.IdRef="ExtractTableSupremCourt_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="41">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="58">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ExtractTableSupremCourt" sap:VirtualizedContainerService.HintSize="813.3333333333334,3038" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtInput" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtInput]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="771.3333333333334,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\CaseTracker_RPA.xlsx" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInput]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="771.3333333333334,2822.6666666666665" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="737.3333333333334,2703.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[CurrentRow(&quot;Case No.&quot;).ToString.Trim = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="695.3333333333334,2616" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="400,182" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="358,94.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Empty row found in Case NO&quot;]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="616.6666666666666,2253.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence sap:VirtualizedContainerService.HintSize="574.6666666666666,2166" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: सर्वोच्च अदालत :: Supreme Court of Nepal" sap:VirtualizedContainerService.HintSize="512.6666666666666,2055.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="add44695-e296-4eee-9447-0d4e4efd57c0" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478.6666666666667,1836.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataTable" Name="dtMyDataTable" />
+                              <Variable x:TypeArguments="x:String" Name="strData" />
+                              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'मुद्दा नं'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="436.6666666666667,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="add44695-e296-4eee-9447-0d4e4efd57c0" Text="[CurrentRow(&quot;Case No.&quot;).ToString]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://supremecourt.gov.np/lic/sys.php?d=reports&amp;f=case_details" DesignTimeRectangle="759, 745, 189, 51" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT regno'" FullSelectorArgument="&lt;webctrl id='regno' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='regno' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="12249515-3f58-48e5-b64e-f11b91c76e03" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMEAAAA3CAYAAAC1iS6YAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAC8SURBVHhe7dPBCYBAEMBA++9lmxM/9zp/gmgHmYGUkOO81pbKmUD5nglmRsr1mQBKTECeCcgzAXkmIM8E5JmAPBOQZwLyTECeCcgzAXkmIM8E5JmAPBOQZwLyTECeCcgzAXkmIM8E5JmAPBOQZwLyTECeCcgzAXkmIM8E5JmAPBOQZwLyTECeCcgzAXkmIM8E5JmAPBOQZwLyTECeCcgzAXkmIM8E5JmAPBOQZwLyfieQar0mkKqZQPHWvgEvjgf4+HvgagAAAABJRU5ErkJggg==" InformativeScreenshot="d73309d6d2d451e8a6557404cf1a6704.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='सर्वोच्च अदालत :: Supreme Court of Nepal' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="525, 757, 212, 30" ElementType="Text" FriendlyName="'मुद्दा नं'" FullSelectorArgument="&lt;webctrl aaname='मुद्दा नं:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='मुद्दा नं:' tag='LABEL' type='' class='' check:innerText='मुद्दा नं:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANgAAAAiCAYAAAA9KReSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMPSURBVHhe7dy/SxthAMbx/k83HQ1UFKGDi+lQQ6Fk0UIQQQTBQZCCoYGDQqAgtEMzVIKEhlKXEgqZPIRzCgimg6HQKHgIabo4PX0vP0juvfeOu8LrGfoMn8F7X8XCfXl/RPro9587EJEeDIxIIwZGpBEDI9KIgRHF1of9Lgdzfgv1H6rxIAZGFJuDkmHAEApHV4rxIAZGFNtoBcuso8oVjCh9DIxIIwZG96pztD44w9yPBcUzwXKCv5ttqedGsmDLP0fCwChFV6gWxItaqKGjGB/GKM47l8GxgMsaCuKlV14+RI0lMvp9Y4Q1xsAoRQyMSCMGRqTRPwR27aCyk8cTEYzqXJRKYOPzm+LfwcAoRUkDc3G8LeYvWWj88s+NxMDo/5Q0sOj5oWIH5qKxNzeMJRK3iDQTkgZ2h7ODZ+JZHqVmB25v8ty9dn1f+yQIbLBCjkIKzg9ZwSIwMErBBT4sT17kaPIlRx+tL2UUlqR5mS3Uf07Pm5Jgi+ielpEd/czCZwZGM6mP5r45iSPBCjZwfoiX4vuylgN3+nmYhGew7ulHbL5YQ6UljzEwmhU3DkrjVSxhYGcHS+rwei5a9gnO5Oe6LzkiMDBKz+DKfQ0r+010FeNhgdmW+iUfns/EWKbsH2NgREFhgbU/5cXzIhq3U897YkXMeC8/AyOKJfQMNtpeZsXK1x5HJs5lq15chilC6vjn6w6Mn4PRLOmeHmL7VQ4LpvcyG3icK6La6vvnXbdQt7aQnR/OMeYXseitYK+bwYsPBkY05aaFxrcLdLzVqeeiaYmzVWYddXklkwy3jnlUztXjaWBglD6x5aseS9u6aWL7t+KtQIHPpSS3Dt56N5PLYoW5UYyngIFR6tpHazCNOWzKZ6cR93tRrEwmSnZwTOaK7Zr3QbG58VV59X/fGBg9AH3Y5ZyIzMTK3iHsi8l5q+vUsCtWJXOjhnbYn0L5eP8xTREV+cyWEgZGD0b3vInKmx2sPl8UsXmXCSKsp3lsvz9BJ1ZcDw8DI9KIgRFpxMCINGJgRBoxMCJt7vAX7j/m5Ad8zLAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NClick ClickType="Single" DisplayName="Click 'खोज्ने'" sap:VirtualizedContainerService.HintSize="436.6666666666667,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="add44695-e296-4eee-9447-0d4e4efd57c0" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://supremecourt.gov.np/lic/sys.php?d=reports&amp;f=case_details" DesignTimeRectangle="750, 841, 76, 50" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'खोज्ने'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='    खोज्ने     ' check:text='खोज्ने' /&gt;" Guid="3ac87075-d226-4931-90ba-f3ee0db575ef" ImageBase64="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" InformativeScreenshot="317f9adbd5078bf4e815192726deb21e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='सर्वोच्च अदालत :: Supreme Court of Nepal' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'मुद्दाको बिस्तृत विवरण'" sap:VirtualizedContainerService.HintSize="436.6666666666667,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="add44695-e296-4eee-9447-0d4e4efd57c0" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://supremecourt.gov.np/lic/sys.php?d=reports&amp;f=case_details&amp;num=1&amp;mode=view&amp;caseno=70344" DesignTimeRectangle="1772, 1006, 122, 72" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'मुद्दाको बिस्तृत विवरण'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='  मुद्दाको बिस्तृत विवरण' check:innerText='मुद्दाको बिस्तृत विवरण' /&gt;" Guid="b5e67be1-e7e5-42dd-a1f5-065ea543d6e5" ImageBase64="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" InformativeScreenshot="23e665a84a73135a8b0877964e7e78dd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='सर्वोच्च अदालत :: Supreme Court of Nepal' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="866, 869, 890, 102" ElementType="Text" FriendlyName="'प्रतिबादिहरु'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='प्रतिबादिहरु' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='प्रतिबादिहरु' type='' tag='TH' class='' check:innerText='प्रतिबादिहरु' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NGetText DisplayName="Get Text 'तारेख विवरण'" sap:VirtualizedContainerService.HintSize="436.6666666666667,158.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="add44695-e296-4eee-9447-0d4e4efd57c0" TextString="[strData]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://supremecourt.gov.np/lic/sys.php?d=reports&amp;f=case_details&amp;num=1&amp;mode=view&amp;caseno=65504" DesignTimeRectangle="11, 715, 1895, 1590" DesignTimeScaleFactor="0.75" FriendlyName="'तारेख मिती'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td' tableCol='1' tableRow='33' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' aaname='                                     ' tag='TD' /&gt;" Guid="4c5d846d-2642-4196-8228-810fcffc4641" ImageBase64="" InformativeScreenshot="627155c91e9800e27be0295ca33b4761.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='सर्वोच्च अदालत :: Supreme Court of Nepal' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="11, 685, 1895, 30" ElementType="Text" FriendlyName="'तारेख विवरण'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='32' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='तारेख विवरण' check:innerText='तारेख विवरण' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAB2sAAAAiCAYAAABx0zIrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAN6SURBVHhe7d3LbtpMAIbhXmRvMNv2GriHSFGXiA2rLFBAiRSRwzTjA4zxOLGL3Wml55Ue/Snm9K8/jfnWFiRJkiRJkiRJkiRJi7ff7yvNVGuslSRJkiRJkiRJkqS/UXas3e12Yb1eAwAAAAAAALCQ7Fj749chfP+5BQAAAAAAAGAhxloAAAAAAACAAoy1AAAAAAAAAAUYawEAAAAAAAAKMNYCAAAAAAAAFGCsBQAAAAAAAChg1rH25v4tvrxqu8k/Z7qHcHds3rRpvvcGAAAAAAAAKGOhk7VxYH0Ld7e5axNtXkI4PHUeWx3it5zp/QEAAAAAAAAKWGisjZ7Cdo5BNTPW1uoTt07ZAgAAAAAAAP+jcWPt7XN4jBeGem/+GzvfCbnTa/qczzo+h5v2c+NQe+o9vDZ/5Rr42Kr8tfeQvns+p3cBAAAAAACAZVx1sjbejrg92Rp/r/bx/qH7nNyp2Dj8poNsI/v6Sjyh+xJWvcf/5Nrl7Zm7/z5/h8/eFwAAAAAAAOB6y461Xwym8TV1b2F7GDnWpqd8Dy/jrzW639NYCwAAAAAAAJQxaayN4+xl2bF289QMnd3Rc3UfT9S2A2l6Lf4dRoy19fPSzwyjrj2E1aZ+b2MtAAAAAAAA8C8YP9ZWp1a7A+bQydrOqHu6DXI9plbFxy5uh9wdUVPJcNq7hXIcW0deaz66+zu0xloAAAAAAACgjGlj7cVvzQ7fBjmOneko2oi/YXt6j/Q5cTQdcbK29x1GXvsQv1/v93M/pP8P57+7rwUAAAAAAACY2/ixNjNgDo+1H+Iwmxk842tOz6ueU/d4HHGythl1089Mb3U8fO18vfcZ6anbzpDc/+4AAAAAAAAAc5kw1vZPp3461jaPnQfQVhxC+6Np7vW1y+G0fn1VHHhHXztfb7/zsMvPBAAAAAAAAJjXpLE2Sgfbr8ba9vGh2w+fOj6H1eix9tpr8fHMLZo7jLUAAAAAAADAsiaPtQAAAAAAAABcz1gLAAAAAAAAUICxFgAAAAAAAKAAYy0AAAAAAABAAcZaAAAAAAAAgAKMtQAAAAAAAAAFGGsBAAAAAAAACjDWAgAAAAAAABRgrAUAAAAAAAAowFgLAAAAAAAAUICxFgAAAAAAAKCA7Fi72+3Cer0GAAAAAAAAYCHZsVaSJEmSJEmSJEmStGz1WLsPvwHte/DwBZ0FkwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                            </uix:NGetText>
+                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtMyDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Column-0' ReferenceName='Column-0' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Column-1' ReferenceName='Column-1' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Column-2' ReferenceName='Column-2' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Column-3' ReferenceName='Column-3' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Column-1' attr='text' /&gt;&lt;column name='Column-2' attr='text' /&gt;&lt;column name='Column-3' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="436.6666666666667,159.33333333333334" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="add44695-e296-4eee-9447-0d4e4efd57c0" Version="V3">
+                              <uix:NExtractData.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="23, 411, 1871, 2848" DesignTimeScaleFactor="1.5" FriendlyName="'तारेख मिती'" FullSelectorArgument="&lt;webctrl tableRow='*' tag='TABLE' visibleinnertext='तारेख मिती*' /&gt;" Guid="d2fab285-6da5-41d9-9ccb-f5ba9b9350ab" InformativeScreenshot="1959b89d861ce5d992979a93f19c98d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='सर्वोच्च अदालत :: Supreme Court of Nepal' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                              </uix:NExtractData.Target>
+                            </uix:NExtractData>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="436.6666666666667,86" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[dtMyDataTable.Rows(dtMyDataTable.Rows.Count-1).ItemArray(0)]" />
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436.6666666666667,562.6666666666666" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,482.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="358,239.33333333333334" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="DebuggerApi" MovementUnits="10" Version="V3">
+                                    <uix:NMouseScroll.SearchedElement>
+                                      <uix:SearchedElement>
+                                        <uix:SearchedElement.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://supremecourt.gov.np/lic/sys.php?d=reports&amp;f=case_details&amp;num=1&amp;mode=view&amp;caseno=70344" DesignTimeRectangle="24, 561, 643, 48" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'तारेख मिती'" FullSelectorArgument="&lt;webctrl tableRow='36' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='तारेख मिती' check:innerText='तारेख मिती' /&gt;" Guid="af124c6b-6c45-46f7-9ade-5d59f0d70b5d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAocAAAA0CAYAAAD41ZIQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAb1SURBVHhe7d3fZ1tvHMDx7594bg4lNJTGiNKYVYnRGL1pfFnGMZZdVKl8ab9MLvJl8mVCpdRhMtOxpSplZBxGRHP12fOcnHOaJk/SJs2PZns/vC6WJ+ck69XbeXLO85cwGAwGg8FgMBjBIA4ZDAaDwWAwGNHw4/Dbt28AAADATRx2Oh0AAAD8gXpbkDgEAAD4wxGHAAAAiBCHAAAAiBCHAAAAiBCHAAAAiBCHAAAAiDzKOGy82xLLsrrsmCT3inL+w/xeAAAATM/jv3LYbkrtKC32miOuZ5hfEO9zSXLphMTsIGItW+JP0pL9pyznTfMxE/telf0Xyeiz7NWEpF+VCGYAADB1jz8OA/XDpNjbRWkY5uZNX9m0VQymXlel0Qpeb7fEu6hJ6SAjyRVbEjv7Ur26fdxEmmXJqCi0twtSC6Kz1azJ8XNbrJW0FC/73g8AAPAASxOHnXZdChu2ZN43zfPz0nbF0VfwnhSkbprX2g2pvkl1A/LAFa9teM89NYvdJfbcad+c//dQ32NDfY8HnB8AAKDX8sSh0qpkxbazUlnk8vJVUbb0MrLjmud7XZUlt26LvZkXd8Il4PD3lwNxqPh/DxWg2UprYA4AAGASSxWHnU5djjcsib92pWWcn4OfFcnqONwuStM0369dl9JuXKy1XSldGObvcnEsSf07w72KeP1z7ZrkV9V3UXML+3sAAIDfypLFYXi1LCmFr+b52WtJ5W9bLCsrlZ+meYO2J1VHBaKdkvxHz/yeEepHeok6Ls5Z/7Hqu+ypOFzNS+3W6wAAAJOZbhyeOf4S6O/AOev//7niGN732Gy9a/R9bwAAgPtb2JVD19ExsyXFW3f0BgH2bNRdyQ0pPtPHJuV41DLtT3UuveS66oh75xW+8Jzqvcb528LfAQ4GpBIE8tBIu2t+GONx431vAACAuyxhHIZLy5bE3tSM86H6UdIPqvR/d93hTBwCAABoSxmH0Y0YtoqiUY9xCe8s3ikP3sxxC3EIAACgLWccKtWXpuP7qfP5u4r0xNNVVfLpuH/l0d/V5GlG9k+qUtjse98IxCEAAPhdzS4O9YOgDzKSius7e3XAmEweh+a47NcXT5dF2Qp2G/G3nmu3pPF/ThLBtnSLjsPGyb5knobhakYcAgCAWZpNHKowLG6rKLRT4pzUpWVY+h3nyqH3uShFt/dBz00pPQ+O/37zPt9VQ5rh57WrktPn85eVw0fQDAalp4It7sfX4uJQnzPckq9uuoHGeBxxCAAApms2ceg6/tWvxGHdPK/cOw6DvYWtNUeqwS4j3mkQcxvHt7awa53m/M+NO1V/y7r6vzq44uL4YRmc27jt3XiRNf04DJa/R23JRxwCAIA5mEkchvFk2vItNM6Vw9rbuH8+y45JYj3WXXa1E7L/qfdYJbxRRc8r9uqW5E/DO5WDOWOABXG2qDgMb5x5Wb393l7EIQAAmIOZxmH2w/A9f8e6IcWrSi6MPh2I6ZyUPpt3Gmm+zwTxOLiDSe1NTJ1jcHcV7zQnMX3MA+Lw/CAI2HsyxuGobfCIQwAAMAczicOOii0dMlNZVg54H7rPNrS31dyox9e061LY6AbYwPMNPXX+NXWOzby4ze5rzU8F/yaVbrRNHofhMxVDY105DH8bybIyAABYsNnE4Y+yZHTs6D1/h4TcuHHY6XhS2dM3lNjDwyvQcoPfJJo+3zuX0qu0xFf056tQjKckc1CQ3BP978nj0N+RRYWnfn0w4noYI8+T8o4+Lib5jz3v7UUcAgCAOZhNHEZ3BtuSeW/enWT8OFSCK3+WvsnkzLys3OWp83eXeZMjrl7eGC+yhv7m8HtFskEgjheHN7u+2Dtlafa8HiEOAQDAHMwoDpWvBUmqmLFsFYCXg/MTxaEWPKtQ35AyMhDbdTne1IE6+BvDQVOKQ63dkNqJK3XPMKcNicOb5fAhV0aJQwAAMAezi0Olfhj8Dm9NxUtfLE0ch4p+LqH/4GodiKcjAjG80riSluKFYV7xLhviTTMO7zIsDrUwqE1XRolDAAAwBzONw07bk2qwvGutF+S8Z+4hcahFgaiXrvtvPOnlncvxc/1A7oTsHrk3D5huNaV2lBbb/6xHEodK9AxHKyGFLz1zxCEAAJiD2cahpgLRfZuS3b7fHj40Dn0XJdl9OnhV0qT5pSz7L1KSWNVLzfqzbYmtpyRz6D6eK4cBz81Larfvt4fEIQAAmIPZxyEAAACWBnEIAACACHEIAACACHEIAACACHEIAACACHEIAACACHEIAACACHEIAACACHEIAACACHEIAACACHEIAACACHEIAACACHEIAACACHEIAACACHEIAACACHEIAACAiDEOAQAAgCgOr6+vAQAA8Ae6acFr+QU+S+qVkCRsfQAAAABJRU5ErkJggg==" InformativeScreenshot="b1354ba84e0603272384699fc7dda4b7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='सर्वोच्च अदालत :: Supreme Court of Nepal' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                                        </uix:SearchedElement.Target>
+                                        <uix:SearchedElement.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:SearchedElement.Timeout>
+                                      </uix:SearchedElement>
+                                    </uix:NMouseScroll.SearchedElement>
+                                  </uix:NMouseScroll>
+                                  <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[dtMyDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="[&quot;Data\CaseTrackerList\Case_No_&quot;+CurrentRow(&quot;Case No.&quot;).ToString+&quot;.xlsx&quot;]" />
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAKlSURBVDhPdZNfSFMBFMYnkWQEIVpmL9FrBhGB+mCJDURXFPQS9FBgYrgie8m4SLMUIUEmhkhZmqYlgRqKTqd53Z22uU3b1P0TnM1/d3O3nNc5552b65yLkyG3h497zr7z/XbOhSvyzOtyaPNIucuqen1YzqlvjXOathYhDzIyZmEyS+SyjlZGIhGZkDyrhj6HlVQLeSjaTMpEbvsYAc3TWAW2/1T4vFQ3Q9c7aKd8ycuMd25vMeV7e3uF4BeAHuEcbPJC5LapS6C5F/B7pVusk6AdDfo5I+GxGWuNM4YyHdlfNP6j9/HXrg/ppv62vOFpbYN0knpfCLAjAMgDAPUQAGKHXVWhJauo5UW7lOO4yzCQ4KEHJDpVM/qiUCgUt7I8f17RRVRZZjQZ+Bucn40b3IUmbSfAZrpdC/lQn0AT5aEV+TpVC67M9yjG8/vcJrt2CmseAGvchCZlw+tK22TdqeFwOC46fBgQCnHxLMskeddXU7HfB1BiWDd+fX3lLIbZDVfK/wDgnYFTRLjB7u4uvAMeMJq95WOS4O54HIrShQBRD/6Ihx0AYkM+H5McDHJHsbZN1z1XKwk51kHOfxw9LkCncjt/EzHDA1ZmlbmdTQ86Br5kmDTKizbjzxsKZo28jiHXUh2hHy+tx9o82X6/VZ7s62lOiCjaj4W1Q5esiyZlLgCGxcaJSplKIRnqaRerv7cWtrhpywUMOef7b6tHGqVY+/3sydlfnwqM+leV1OAbwmamrtGW/RNwQEiWqeKPTfI7fUIe6uAdCJpLhkw9eVVX/eyK1WrSZgrOIAC+Kv7eWJE9NUSRJDHYUXc68rkmJVJ8KynY3fqy+vAcZHN4CkLwGZVhsLmg+olkuL4sfaa2NH32XXnuqKb3bUnsDGTEa/axrH+Whd94RdNXeQAAAABJRU5ErkJggg==" InformativeScreenshot="bcaab0fdb007c5ac80350dcbc40e584a.jpg" Selector="&lt;html app='chrome.exe' title='सर्वोच्च अदालत :: Supreme Court of Nepal' /&gt;" Url="https://supremecourt.gov.np/lic/sys.php?d=reports&amp;f=case_details" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
